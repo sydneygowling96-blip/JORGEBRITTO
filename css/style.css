@@ -145,12 +145,11 @@ nav {
 
 .hero-logo-watermark {
   position: absolute;
-  right: -80px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 620px;
-  height: 620px;
-  opacity: 0.04;
+  right: 40px;
+  bottom: 40px;
+  width: 280px;
+  height: 280px;
+  opacity: 0.08;
   pointer-events: none;
   z-index: 0;
 }
