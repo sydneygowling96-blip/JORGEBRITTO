@@ -895,13 +895,16 @@ footer {
   .nav-links.open { display: flex; }
 
   .nav-links a {
-    padding: 14px 24px;
+    padding: 16px 48px;
     border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.8);
   }
+
+  .nav-links a:hover { color: var(--accent); }
 
   .nav-links a:last-child { border-bottom: none; }
 
-  .nav-cta { margin: 12px 24px 0; text-align: center; }
+  .nav-cta { margin: 12px 48px 0; text-align: center; }
 
   /* Hero */
   .hero-inner {
