@@ -38,9 +38,9 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--nav-h);
-  background: rgba(255,255,255,0.97);
+  background: rgba(10,10,10,0.97);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--grey-mid);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -70,6 +70,7 @@ nav {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   line-height: 1.3;
+  color: var(--white);
 }
 
 .nav-links {
@@ -83,7 +84,7 @@ nav {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--black);
+  color: rgba(255,255,255,0.8);
   transition: color 0.2s;
 }
 
@@ -92,7 +93,7 @@ nav {
 .nav-links a.active { color: var(--accent); }
 
 .nav-cta {
-  background: var(--black);
+  background: var(--accent);
   color: var(--white) !important;
   padding: 10px 22px;
   font-size: 0.75rem !important;
@@ -100,7 +101,7 @@ nav {
   transition: background 0.2s !important;
 }
 
-.nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
+.nav-cta:hover { background: #a00d25 !important; color: var(--white) !important; }
 
 /* Hamburger */
 .hamburger {
@@ -116,7 +117,7 @@ nav {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--black);
+  background: var(--white);
   transition: all 0.3s;
 }
 
@@ -140,6 +141,23 @@ nav {
     linear-gradient(var(--white) 1px, transparent 1px),
     linear-gradient(90deg, var(--white) 1px, transparent 1px);
   background-size: 60px 60px;
+}
+
+.hero-logo-watermark {
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 620px;
+  height: 620px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-logo-watermark svg {
+  width: 100%;
+  height: 100%;
 }
 
 .hero-inner {
@@ -872,11 +890,11 @@ footer {
     position: fixed;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: var(--white);
+    background: var(--black);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    border-bottom: 1px solid var(--grey-mid);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     padding: 16px 0;
   }
 
@@ -884,7 +902,7 @@ footer {
 
   .nav-links a {
     padding: 14px 24px;
-    border-bottom: 1px solid var(--grey-light);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
   }
 
   .nav-links a:last-child { border-bottom: none; }
